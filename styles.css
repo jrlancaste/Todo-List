@@ -1,0 +1,103 @@
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: cursive;
+}
+button{
+    background-color: rgb(237, 181, 237);
+    font-family: cursive;
+}
+#sections{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+#left,
+#right{
+    flex: 1 1 auto;
+    background-color: rgb(237, 181, 237);
+}
+#center{
+    flex: 0 0 auto;
+    width: 700px;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+#tasks{
+    width: 100%;
+    list-style-type: none;
+    
+    padding: 0;
+}
+.task{
+    width: 90%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+    border-bottom: 1px dotted black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.trash-icon{
+    height: 15px;
+    width: 15px;
+    padding: 3px 0 0 0;
+}
+.trash-btn{
+    background-color: rgb(237, 181, 237);
+}
+.task-text{
+    text-decoration: underline;
+}
+
+.task-checkbox{
+    accent-color: rgb(237, 181, 237);
+    width: 20px;
+    height: 20px;
+}
+#add-new-task{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .9);
+    justify-content: center;
+    align-items: center;
+    color: rgb(237, 181, 237);
+    font-size: 4rem;
+    flex-direction: column;
+    user-select: none;
+}
+#add-new-task.show{
+    display: flex;
+    
+}
+#add-new-btn{
+    display: flex;
+    width: 500px;
+    height: 60px;
+    background-color: lightgreen;
+    margin-top: 20px;
+    justify-content: center;
+}
+#add-new-btn:hover{
+    background-color: green;
+}
+#task-description-input,
+#task-deadline-input{
+    margin: 5px;
+    font-family: cursive;
+    background-color: rgb(237, 181, 237);
+}
+#done-btn{
+    margin-top: 5px;
+    padding: 2px 5px 2px 5px;
+}

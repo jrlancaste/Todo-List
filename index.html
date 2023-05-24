@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div id="sections">
+        <div id="left"></div>
+        <div id="center">
+            <h2>To Do List</h2>
+            <ul id="tasks">
+            </ul>
+            <button class="task" id="add-new-btn">Add new task</button>
+        </div>
+        <div id="right">
+        </div>
+    </div>  
+    <div id="add-new-task">
+        <h2>Add new task</h2>
+        <input id="task-description-input" type="text" placeholder="Add task description">
+        <input id="task-deadline-input" type="datetime-local" placeholder="Add task deadline">
+        <button id="done-btn">Done</button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
